@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <!-- Top app bar feel: title + logout -->
+    <!-- Top app bar feel: title + logout + theme toggle -->
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="0dp"
@@ -33,10 +33,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:text="Logout"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnThemeToggle"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Light/Dark toggle: top-right corner -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnThemeToggle"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Toggle light or dark mode"
+        app:icon="@drawable/ic_theme_toggle"
+        app:iconSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnLogout" />
 
     <!-- Summary widget: highly elevated hero card -->
     <com.google.android.material.card.MaterialCardView
@@ -52,7 +66,7 @@
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogout">
+        app:layout_constraintTop_toBottomOf="@+id/btnThemeToggle">
 
         <FrameLayout
             android:layout_width="match_parent"

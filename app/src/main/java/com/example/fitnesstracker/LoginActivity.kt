@@ -26,6 +26,10 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener { attemptLogin() }
+
+        // --- Added Theme Toggle Listener ---
+        binding.btnThemeToggle.setOnClickListener { ThemeManager.toggle(this) }
+
         binding.tvForgotPassword.setOnClickListener { sendPasswordReset() }
         binding.tvRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))

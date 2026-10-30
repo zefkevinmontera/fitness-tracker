@@ -3,6 +3,7 @@ package com.example.fitnesstracker
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View // Added View import
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -98,6 +99,9 @@ class MainActivity : AppCompatActivity() {
             auth.signOut()
             goToLogin()
         }
+
+        // --- Added Theme Toggle Listener ---
+        findViewById<View>(R.id.btnThemeToggle).setOnClickListener { ThemeManager.toggle(this) }
 
         updateSummary(emptyList())
     }

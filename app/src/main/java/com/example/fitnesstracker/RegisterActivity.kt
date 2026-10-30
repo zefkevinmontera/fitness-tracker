@@ -26,6 +26,10 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnRegister.setOnClickListener { attemptRegister() }
+
+        // --- Added Theme Toggle Listener ---
+        binding.btnThemeToggle.setOnClickListener { ThemeManager.toggle(this) }
+
         binding.tvLogin.setOnClickListener { finish() }
     }
 
