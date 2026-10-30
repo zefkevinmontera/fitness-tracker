@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- IMPORTANT: keep this style NAME identical to the one your AndroidManifest.xml
+         references in android:theme (assumed here: Theme.FitnessTracker).
+         The parent is unchanged, so no other references need to change.
+         Colors switch between Light and Dark automatically via values-night/colors.xml. -->
+    <style name="Theme.FitnessTracker" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary -->
+        <item name="colorPrimary">@color/fit_primary</item>
+        <item name="colorOnPrimary">@color/fit_on_primary</item>
+        <item name="colorPrimaryContainer">@color/fit_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/fit_on_primary_container</item>
+        <item name="colorPrimaryInverse">@color/fit_primary_inverse</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/fit_secondary</item>
+        <item name="colorOnSecondary">@color/fit_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/fit_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/fit_on_secondary_container</item>
+
+        <!-- Tertiary -->
+        <item name="colorTertiary">@color/fit_tertiary</item>
+        <item name="colorOnTertiary">@color/fit_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/fit_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/fit_on_tertiary_container</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/fit_error</item>
+        <item name="colorOnError">@color/fit_on_error</item>
+        <item name="colorErrorContainer">@color/fit_error_container</item>
+        <item name="colorOnErrorContainer">@color/fit_on_error_container</item>
+
+        <!-- Background and surfaces -->
+        <item name="android:colorBackground">@color/fit_background</item>
+        <item name="colorOnBackground">@color/fit_on_background</item>
+        <item name="colorSurface">@color/fit_surface</item>
+        <item name="colorOnSurface">@color/fit_on_surface</item>
+        <item name="colorSurfaceVariant">@color/fit_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/fit_on_surface_variant</item>
+        <item name="colorSurfaceInverse">@color/fit_surface_inverse</item>
+        <item name="colorOnSurfaceInverse">@color/fit_on_surface_inverse</item>
+        <item name="colorOutline">@color/fit_outline</item>
+        <item name="colorOutlineVariant">@color/fit_outline_variant</item>
+
+        <!-- Surface containers (needs Material Components 1.10.0+) -->
+        <item name="colorSurfaceContainerLowest">@color/fit_surface_container_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/fit_surface_container_low</item>
+        <item name="colorSurfaceContainer">@color/fit_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/fit_surface_container_high</item>
+        <item name="colorSurfaceContainerHighest">@color/fit_surface_container_highest</item>
+
+        <!-- System bars blend into the app surface -->
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+    </style>
+
+</resources>
